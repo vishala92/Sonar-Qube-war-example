@@ -18,8 +18,8 @@ pipeline {
                         sh """
                         ${mvn}/bin/mvn clean verify \
                         org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-                        -Dsonar.projectKey=sonardemo \
-                        -Dsonar.projectName=sonardemo
+                        -Dsonar.projectKey=sonarqube \
+                        -Dsonar.projectName=sonarqube
                         """
                     }
                 }
